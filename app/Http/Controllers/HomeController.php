@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index() {
-        return view('home');
+        $name = "Saya billy";
+        $angka = 1 + 2;
+        return view('home', compact('name', 'angka'));
     }
 }

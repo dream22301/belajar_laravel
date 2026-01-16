@@ -1,2 +1,1 @@
-<h1 style="display: flex;justify-content: center">halo</h1>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui ab consequatur dolorem eos, soluta ut corrupti cupiditate et debitis optio sint molestias, animi suscipit rerum accusamus esse nemo architecto voluptatum quis, explicabo minima accusantium dolor. Iusto sunt, obcaecati illum reprehenderit labore optio est accusamus veritatis omnis? Expedita ad quia mollitia?</p>
+<h1>test {{ $name }} {{ $angka }}</h1>
