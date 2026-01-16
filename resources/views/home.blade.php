@@ -1,1 +1,1 @@
-<h1>test {{ $name }} {{ $angka }}</h1>
+<h1>{{ $text }}</h1>

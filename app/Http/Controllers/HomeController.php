@@ -9,6 +9,7 @@ class HomeController extends Controller
     public function index() {
         $name = "Saya billy";
         $angka = 1 + 2;
-        return view('home', compact('name', 'angka'));
+        $text = $name . " dan " . $angka;
+        return view('home', compact('name', 'angka', 'text'));
     }
 }
