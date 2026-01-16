@@ -7,9 +7,10 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index() {
-        $name = "Saya billy";
-        $angka = 1 + 2;
-        $text = $name . " dan " . $angka;
-        return view('home', compact('name', 'angka', 'text'));
+        $aray = [
+            "Andhika" => "Rp.50000",
+            "Billy" => "Rp.20000",
+        ];
+        return view('home', compact('aray'));
     }
 }
