@@ -1,5 +1,8 @@
-<ul>
-    @foreach ($aray as $ray => $ay)
-        <li>{{ $ray . " Mempunyai uang sebesar = " . $ay}}</li>
-    @endforeach
-</ul>
+@extends('layouts.app')
+
+@section('title', 'content')
+
+@section('content')
+    <h2>Selamat datang</h2>
+    <p>Ini adalah layout</p>
+@endsection
