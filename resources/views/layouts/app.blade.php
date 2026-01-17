@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Ini Web Gua :)</h1>
+        @yield('header')
         <hr>
     </header>
 
