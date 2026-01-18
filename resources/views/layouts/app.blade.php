@@ -10,6 +10,8 @@
     <header>
         @yield('header')
         <hr>
+        <a href="{{ route('home') }}">Home</a>
+        <a href="{{ route('about') }}">About</a>
     </header>
 
     <main>

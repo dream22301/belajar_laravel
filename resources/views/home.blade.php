@@ -9,4 +9,11 @@
 @section('content')
     <h2>Selamat datang</h2>
     <p>Ini adalah layout</p>
+    <ul>
+        @foreach ($aray as $ray => $ay) 
+            <li>
+                orang bernama {{ $ray }} mempunyai uang sebanyak {{ $ay }}
+            </li>
+        @endforeach
+    </ul>
 @endsection
