@@ -11,6 +11,7 @@
         @yield('header')
         <hr>
         <a href="{{ route('home') }}">Home</a>
+        <a href="{{ route('form') }}">Form</a>
         <a href="{{ route('about') }}">About</a>
     </header>
 
