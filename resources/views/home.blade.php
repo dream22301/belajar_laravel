@@ -3,7 +3,7 @@
 @section('title', 'content')
 
 @section('header')
-    <h1>test</h1>
+    <h1>Ini Home</h1>
 @endsection
 
 @section('content')
