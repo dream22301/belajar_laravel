@@ -16,3 +16,11 @@
         <button type="kasih">send</button>
     </form>
 @endsection
+
+@if ($errors->any())
+    <ul>
+        @foreach ($errors->all() as $error)
+            <li style="background-color: red">{{ $error }}</li>
+        @endforeach
+    </ul>
+@endif
