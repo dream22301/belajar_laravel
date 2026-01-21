@@ -12,15 +12,16 @@
     <form method="POST" action="{{ route('form.submit') }}">
         @csrf
     
-        <input type="text" name="nama" placeholder="Kasih Nama">
-        <button type="kasih">send</button>
+        <input type="text" name="nama" placeholder="Kasih Nama" value="{{ old('nama') }}">
+        <button type="submit">send</button>
     </form>
-@endsection
+    
+    @if ($errors->any())
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li style="background-color: red">{{ $error }}</li>
+            @endforeach
+        </ul>
+    @endif
 
-@if ($errors->any())
-    <ul>
-        @foreach ($errors->all() as $error)
-            <li style="background-color: red">{{ $error }}</li>
-        @endforeach
-    </ul>
-@endif
+@endsection
