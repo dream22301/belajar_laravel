@@ -13,8 +13,8 @@ class FormController extends Controller
             'nama' => 'required|min:2|max:20'
         ]);
 
-        return view('form-submit', [
-            'nama' => $request->nama
-        ]);
+        return redirect()
+        ->route('form')
+        ->with('success', 'data sudah terkirim');
     }
 }

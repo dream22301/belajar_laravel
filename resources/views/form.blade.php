@@ -24,4 +24,10 @@
         </ul>
     @endif
 
+    @if (session('success'))
+        <div style="background-color: lightgreen; padding: 10px;">
+            {{ session('success') }}
+        </div>
+    @endif
+
 @endsection
