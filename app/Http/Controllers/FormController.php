@@ -7,8 +7,7 @@ use Illuminate\Http\Request;
 class FormController extends Controller
 {
     public function kasih(Request $request) {
-        $nama = $request->input('nama');
-
+        
         $request->validate([
             'nama' => 'required|min:2|max:20'
         ]);

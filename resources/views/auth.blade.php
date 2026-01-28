@@ -13,7 +13,7 @@
         <ul style="display: flex; flex-direction: column;width: 25%;gap: 10%">
             <input type="text" name="nama" placeholder="Berikan Username anda" value="{{ old('nama') }}">
             <input type="email" name="email" placeholder="Berikan Email anda" value="{{ old('email') }}">
-            <input type="password" name="password" placeholder="Berikan Password anda" value="{{ old('password') }}">
+            <input type="password" name="password" placeholder="Berikan Password anda" value="{{ 'password' }}">
             
             <button type="submit">KirimKan</button>
         </ul>

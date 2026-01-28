@@ -8,9 +8,6 @@ use Illuminate\Validation\Rule;
 class AuthController extends Controller
 {
     public function auth_control(Request $minta) {
-        $nama = $minta->input('nama');
-        $email = $minta->input('email');
-        $pw = $minta->input('password');
 
         $list_pw = [
             '0916',
@@ -25,8 +22,6 @@ class AuthController extends Controller
                 Rule::in($list_pw)
             ],
         ]);
-
-
 
         return redirect()
             ->route('htua')
