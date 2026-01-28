@@ -13,6 +13,7 @@
         <a href="{{ route('home') }}">Home</a>
         <a href="{{ route('form') }}">Form</a>
         <a href="{{ route('about') }}">About</a>
+        <a href="{{ route('htua') }}">Auth</a>
     </header>
 
     <main>
