@@ -30,7 +30,13 @@
 
         @if (session('bis'))
             <div style="background-color: lightseagreen">
-                {{ session('bis') }}
+                    <ul>
+                        @foreach ($users as $us)
+                            <li>
+                                {{ $us->nama }} - {{ $us->email }} - {{ $us->password }}
+                            </li>
+                        @endforeach
+                    </ul>
             </div>
         @endif
 

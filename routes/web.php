@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\FormController;
+use \App\Http\Controllers\UserController;
 
 Route::get('/about', function () {
     return view('about');
@@ -22,3 +23,5 @@ Route::get('/auth', function() {
 })->name('htua');
 
 Route::post('/auth', [AuthController::class, 'auth_control'])->name('htua.submit');
+
+Route::get('/users', [UserController::class, 'read_data'])->name('users.index');

@@ -4,28 +4,26 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
+use App\Models\User;
 
 class AuthController extends Controller
 {
     public function auth_control(Request $minta) {
 
-        $list_pw = [
-            '0916',
-            '0186',
-        ];
-
         $minta->validate([
             'nama' => 'required|min:5',
-            'email' => 'required|email',
-            'password' => [
-                'required',
-                Rule::in($list_pw)
-            ],
+            'email' => 'required|email|unique:users',
+            'password' => 'required|min_digits:8',
+        ]);
+
+        User::create([
+            'nama' => $minta->nama,
+            'email' => $minta->email,
+            'password' => $minta->password,
         ]);
 
         return redirect()
-            ->route('htua')
-            ->with('bis', 'Sudah bisa e masuk');
+            ->route('users.index');
     }
 
 }

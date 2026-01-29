@@ -10,6 +10,7 @@ class FormController extends Controller
         
         $request->validate([
             'nama' => 'required|min:2|max:20'
+            
         ]);
 
         return redirect()
